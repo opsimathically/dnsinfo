@@ -1,20 +1,20 @@
 {
-  "name": "@opsimathically/set_project_name",
+  "name": "@opsimathically/dnsinfo",
   "version": "0.0.1",
-  "description": "Set project description.",
+  "description": "Retrieve DNS and RDNS information from arbitrary servers.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npx ts-to-zod && tsup",
+    "build": "npx ts-to-zod --config=zod-to-ts && tsup",
     "test": "node --require ts-node/register --require tsconfig-paths/register --test test/**/*.test.ts",
-    "ts-to-zod": "npx ts-to-zod",
+    "ts-to-zod": "npx ts-to-zod --config=zod-to-ts",
     "docs": "typedoc"
   },
   "keywords": [
     "set_keywords"
   ],
-  "homepage": "https://github.com/opsimathically/set_project_name",
+  "homepage": "https://github.com/opsimathically/dnsinfo",
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^22.19.1",
@@ -37,7 +37,7 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opsimathically/set_project_name.git"
+    "url": "git+https://github.com/opsimathically/dnsinfo.git"
   },
   "publishConfig": {
     "access": "public"
